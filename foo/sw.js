@@ -3,7 +3,7 @@ self.addEventListener('install', ()=>{
 });
 
 self.addEventListener('fetch', (event) => {
-  const req = event && evnet.request;
+  const req = event && event.request;
   const url = req.url;
   console.log(`fetch: ${url} (foo)`);
   return;
