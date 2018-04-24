@@ -16,7 +16,7 @@
     <![endif]-->
     <img src="./photo.jpg" />
     <a href="javascript:void(0)" onclick="clickHandler()">Button</a>
-    <a href="javascript:void(0)" onclick="sendMessage()">Send Message</a>
+    <a href="javascript:void(0)" onclick="sendMessageTo()">Send Message</a>
     <script>
       if ('serviceWorker' in navigator) {
         // navigator.serviceWorker.register('./sw.js');
@@ -27,7 +27,7 @@
         img.src = './foo/photo.jpg';
         document.body.appendChild(img);
       }
-      function sendMessage(){
+      function sendMessageTo(){
         sendMessage({
           message: 'Foobar'
         });

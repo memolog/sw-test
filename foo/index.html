@@ -17,13 +17,13 @@
     <img src="./photo.jpg" />
     <img src="../photo.jpg" />
 
-    <a href="javascript:void(0)" onclick="sendMessage()">Send Message</a>
+    <a href="javascript:void(0)" onclick="sendMessageTo()">Send Message</a>
 
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./sw.js');
       }
-      function sendMessage(){
+      function sendMessageTo(){
         sendMessage({
           message: 'Foobar'
         });
