@@ -20,3 +20,8 @@ self.addEventListener('fetch', (event) => {
       })
   }));
 });
+
+self.addEventListener('message', (event)=>{
+  console.log('get message (foo)');
+  console.log(event);
+});

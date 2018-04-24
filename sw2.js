@@ -26,3 +26,8 @@ self.addEventListener('fetch', (event) => {
       })
   }));
 });
+
+self.addEventListener('message', (event)=>{
+  console.log('get message (root / sw2)');
+  console.log(event);
+});
