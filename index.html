@@ -20,6 +20,11 @@
         navigator.serviceWorker.register('./sw.js');
         navigator.serviceWorker.register('./sw2.js');
       }
+      setTimeout(function(){
+        var img = new Image();
+        img.src = './photo.jpg';
+        document.body.appendChild(img);
+      }, 4000);
     </script>
   </body>
 </html>
