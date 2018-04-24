@@ -15,8 +15,8 @@ self.addEventListener('fetch', (event) => {
           return matching;
         }
         return fetch(req).then((res)=>{
-          cache.put(req, res);
-          return res.clone();
+          cache.put(req, res.clone());
+          return res;
         })
       })
   }));
