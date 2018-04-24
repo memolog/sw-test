@@ -27,7 +27,7 @@
         img.src = './foo/photo.jpg';
         document.body.appendChild(img);
       }
-      function sendMessage(){
+      function sendMessage(message){
         return new Promise((resolve, reject) => {
           const channel = new MessageChannel();
           console.log(channel);
