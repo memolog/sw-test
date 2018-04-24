@@ -1,5 +1,6 @@
 self.addEventListener('install', ()=>{
   console.log('install (sw2)');
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', (event) => {
