@@ -3,6 +3,11 @@ self.addEventListener('install', ()=>{
   self.skipWaiting();
 });
 
+self.addEventListener('activate', ()=>{
+  console.log('claints.claim (sw2)');
+  clients.claim();
+})
+
 self.addEventListener('fetch', (event) => {
   const req = event && event.request;
   const url = req.url;
