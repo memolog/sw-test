@@ -3,9 +3,9 @@ self.addEventListener('install', ()=>{
   self.skipWaiting();
 });
 
-self.addEventListener('activate', ()=>{
+self.addEventListener('activate', (event)=>{
   console.log('claints.claim (sw2)');
-  clients.claim();
+  event.waitUntil(clients.claim());
 })
 
 self.addEventListener('fetch', (event) => {
